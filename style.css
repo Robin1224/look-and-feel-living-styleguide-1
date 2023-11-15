@@ -5,7 +5,14 @@
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  /* font-size: min(calc(1em + 1vw), 4em); */
+
+  --color-cream: #f0ead2;
+  --color-lightgreen: #dde5b6;
+  --color-darkgreen: #adc178;
+  --color-lightbrown: #a98467;
+  --color-darkbrown: #6c584c;
+  --color-lightgray: #e0e0e0;
 }
 
 body {
@@ -16,35 +23,74 @@ body {
   font-feature-settings: 'kern' 1, 'liga' on, 'dlig' on;
   line-height: 1.5;
 
-  color: DarkSlateGray;
-  background-color: silver;
+  display: flex;
 }
 
 body > * {
   padding: 0.2rem;
 }
 
+aside {
+  max-width: 24rem;
+  background-color: var(--color-cream);
+  padding: 1rem 1.5rem;
+}
+
+main {
+  padding-left: 1rem;
+}
+
 header {
-  background-color: white;
   margin-bottom: 1rem;
-  color: silver;
+  border-radius: 1rem;
+  background: var(--color-lightgreen);
+  padding: 0.8rem 1.8rem;
+
 }
 
 header > h1 {
-  font-size: 1rem;
-  text-align: right;
+  font-size: 1.5rem;
+  margin-bottom: -0.3rem;
+}
+
+header > h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
+  padding: 0.2rem 0rem;
+  font-size: 1.2rem;
   display: inline;
 }
 
 nav li a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 nav a.active {
   font-weight: bold;
+}
+
+.nav-icon {
+  padding: 0.2rem;
+  height: 2rem;
+  width: 1.8rem;
+}
+
+nav li a span {
+  border-left: 1px solid black;
+  padding-left: 0.6rem;
+  margin-top: 0.1rem;
+  color: black;
 }
 
 section {
