@@ -1,0 +1,35 @@
+h4 .poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 .sans-serif{
+    font-family: sans-serif;
+}
+
+.fontfam1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontfam2{
+    font-family: sans-serif;
+}
+
+.fontsiz p.s1-h1{
+    font-size: 38px; 
+}
+
+.fontsiz p.s2-h2{
+    font-size: 28px; 
+}
+
+.fontsiz p.s3-h3{
+    font-size: 21px; 
+}
+
+.fontsiz p.s4-h4{
+    font-size: 15px; 
+}
+
+.fontsiz p.cr-par{
+    font-size: 9px; 
+}
