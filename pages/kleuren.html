@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrossMarx Living Styleguide</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/styles/kleuren.css">
   </head>
   <body>
     
@@ -13,8 +14,43 @@
       <h2>Kleuren</h2>
 
       <section>
-  
-        <h3> Base colors palette </h3>
+        <div class="grid-container-colors">
+          <h3> Base colors palette </h3>
+
+          <img src="../assets/images/cream.jpg" alt="cream">
+          <h4>Cream</h4>
+          <p>Hex: #f0ead2 <br>rgb: 240, 234, 210</p>
+          <img src="../assets/images/lightgreen.jpg" alt="lightgreen">
+          <h4>Lightgreen</h4>
+          <p>Hex: #dde5b6 <br> rgb: 221, 229, 182</p>
+          <img src="../assets/images/darkgreen.jpg" alt="darkgreen">
+          <h4>Darkgreen</h4>
+          <p>Hex: #adc178 <br> rgb: 173, 193, 120 </p>
+          <img src="../assets/images/lightbrown.jpg" alt="lightbrown">
+          <h4>lightbrown</h4>
+          <p>Hex:#a98467 <br> rgb:169, 132, 103 </p>
+          <img src="../assets/images/darkbrown.jpg" alt="darkbrown">
+          <h4>darkbrown</h4>
+          <p>Hex: #6c584c <br>rgb: 108, 88, 76</p>
+          <img src="../assets/images/lightgray.jpg" alt="lightgrey">
+          <h4>lightgrey</h4>
+          <p>Hex: #e0e0e0 <br> rgb 224, 224, 224</p>
+        </div>
+
+
+
+        <pre><code>
+          :root {
+            /* font-size: min(calc(1em + 1vw), 4em); */
+          
+            --color-cream: #f0ead2;
+            --color-lightgreen: #dde5b6;
+            --color-darkgreen: #adc178;
+            --color-lightbrown: #a98467;
+            --color-darkbrown: #6c584c;
+            --color-lightgray: #e0e0e0;
+          }
+        </code></pre>
   
       </section>
     </main>
